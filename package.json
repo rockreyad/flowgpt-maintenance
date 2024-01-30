@@ -1,0 +1,19 @@
+{
+  "name": "maintenance-page",
+  "version": "1.0.0",
+  "description": "FlowGPT Maintenance Page",
+  "keywords": [
+    "flowgpt",
+    "maintenance",
+    "notified page",
+    "maintenance page",
+    "under construction",
+    "under maintenance"
+  ],
+  "scripts": {
+    "dev": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/main.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
