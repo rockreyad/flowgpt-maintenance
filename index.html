@@ -7,155 +7,761 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>FlowGPT | Under Maintenance</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <meta
+      name="description"
+      content="Use powerful AI apps on FlowGPT, the largest AI platform, for free! Get instant answers from characters, resume editor, essay generator, coding wizard, and more!"
+    />
+
+    <meta
+      name="keywords"
+      content="FlowGPT, ChatGPT, prompts, library, community, recommendations, AI, NLP, natural language processing, machine learning, deep learning, language models"
+    />
+
+    <meta name="author" content="FlowGPT" />
+
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+      *,
+      ::before,
+      ::after {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+      }
+
+      ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+      }
+
+      .absolute {
+        position: absolute;
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      .start-1 {
+        inset-inline-start: 0.25rem;
+      }
+
+      .top-2 {
+        top: 0.5rem;
+      }
+
+      .z-10 {
+        z-index: 10;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .grid {
+        display: grid;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .h-6 {
+        height: 1.5rem;
+      }
+
+      .h-\[50px\] {
+        height: 50px;
+      }
+
+      .h-full {
+        height: 100%;
+      }
+
+      .h-screen {
+        height: 100vh;
+      }
+
+      .max-h-full {
+        max-height: 100%;
+      }
+
+      .min-h-\[24px\] {
+        min-height: 24px;
+      }
+
+      .w-6 {
+        width: 1.5rem;
+      }
+
+      .w-\[306px\] {
+        width: 306px;
+      }
+
+      .w-full {
+        width: 100%;
+      }
+
+      .w-screen {
+        width: 100vw;
+      }
+
+      .max-w-full {
+        max-width: 100%;
+      }
+
+      .flex-shrink-0 {
+        flex-shrink: 0;
+      }
+
+      .shrink-0 {
+        flex-shrink: 0;
+      }
+
+      .origin-\[0\] {
+        transform-origin: 0;
+      }
+
+      .-translate-y-4 {
+        --tw-translate-y: -1rem;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+
+      .scale-75 {
+        --tw-scale-x: 0.75;
+        --tw-scale-y: 0.75;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+
+      .transform {
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+
+      .appearance-none {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      .flex-row {
+        flex-direction: row;
+      }
+
+      .flex-col {
+        flex-direction: column;
+      }
+
+      .items-end {
+        align-items: flex-end;
+      }
+
+      .items-center {
+        align-items: center;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .justify-between {
+        justify-content: space-between;
+      }
+
+      .gap-2 {
+        gap: 0.5rem;
+      }
+
+      .gap-6 {
+        gap: 1.5rem;
+      }
+
+      .gap-7 {
+        gap: 1.75rem;
+      }
+
+      .gap-y-4 {
+        row-gap: 1rem;
+      }
+
+      .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+      }
+
+      .justify-self-center {
+        justify-self: center;
+      }
+
+      .justify-self-stretch {
+        justify-self: stretch;
+      }
+
+      .overflow-hidden {
+        overflow: hidden;
+      }
+
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+
+      .rounded-xl {
+        border-radius: 0.75rem;
+      }
+
+      .bg-transparent {
+        background-color: transparent;
+      }
+
+      .bg-white {
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+      }
+
+      .bg-\[url\(\'https\:\/\/i\.ibb\.co\/BtTDt01\/Final\.png\'\)\] {
+        background-image: url("https://i.ibb.co/BtTDt01/Final.png");
+      }
+
+      .bg-cover {
+        background-size: cover;
+      }
+
+      .bg-no-repeat {
+        background-repeat: no-repeat;
+      }
+
+      .object-cover {
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+
+      .px-2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      .px-2\.5 {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+      }
+
+      .py-6 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      .py-\[54px\] {
+        padding-top: 54px;
+        padding-bottom: 54px;
+      }
+
+      .pb-2 {
+        padding-bottom: 0.5rem;
+      }
+
+      .pb-2\.5 {
+        padding-bottom: 0.625rem;
+      }
+
+      .pl-4 {
+        padding-left: 1rem;
+      }
+
+      .pr-10 {
+        padding-right: 2.5rem;
+      }
+
+      .pr-4 {
+        padding-right: 1rem;
+      }
+
+      .pt-4 {
+        padding-top: 1rem;
+      }
+
+      .text-left {
+        text-align: left;
+      }
+
+      .font-poppins-s-regular {
+        font-family: Poppins;
+      }
+
+      .text-\[22px\] {
+        font-size: 22px;
+      }
+
+      .text-\[40px\] {
+        font-size: 40px;
+      }
+
+      .text-\[48px\] {
+        font-size: 48px;
+      }
+
+      .text-mid {
+        font-size: 17px;
+      }
+
+      .text-sm {
+        font-size: 14px;
+      }
+
+      .font-bold {
+        font-weight: 700;
+      }
+
+      .font-extrabold {
+        font-weight: 800;
+      }
+
+      .font-medium {
+        font-weight: 500;
+      }
+
+      .leading-7 {
+        line-height: 1.75rem;
+      }
+
+      .tracking-\[0\.01em\] {
+        letter-spacing: 0.01em;
+      }
+
+      .text-black {
+        --tw-text-opacity: 1;
+        color: rgb(0 0 0 / var(--tw-text-opacity));
+      }
+
+      .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+      }
+
+      .duration-300 {
+        transition-duration: 300ms;
+      }
+
+      body {
+        margin: 0px;
+        --tw-bg-opacity: 1;
+        background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+        font-family: SF Pro Display, sans-serif;
+        line-height: normal;
+      }
+
+      .hover\:bg-white\/90:hover {
+        background-color: rgb(255 255 255 / 0.9);
+      }
+
+      .focus\:outline-none:focus {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+
+      .focus\:ring-0:focus {
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+          var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+          calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+          var(--tw-shadow, 0 0 #0000);
+      }
+
+      .peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:top-1\/2 {
+        top: 50%;
+      }
+
+      .peer:placeholder-shown ~ .peer-placeholder-shown\:top-1\/2 {
+        top: 50%;
+      }
+
+      .peer:-moz-placeholder-shown
+        ~ .peer-placeholder-shown\:-translate-y-1\/2 {
+        --tw-translate-y: -50%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+
+      .peer:placeholder-shown ~ .peer-placeholder-shown\:-translate-y-1\/2 {
+        --tw-translate-y: -50%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+
+      .peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:scale-100 {
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+
+      .peer:placeholder-shown ~ .peer-placeholder-shown\:scale-100 {
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+
+      .peer:focus ~ .peer-focus\:top-2 {
+        top: 0.5rem;
+      }
+
+      .peer:focus ~ .peer-focus\:-translate-y-4 {
+        --tw-translate-y: -1rem;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+
+      .peer:focus ~ .peer-focus\:scale-75 {
+        --tw-scale-x: 0.75;
+        --tw-scale-y: 0.75;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+
+      .peer:focus ~ .peer-focus\:px-2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      .peer:focus ~ .peer-focus\:text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+      }
+
+      @media (min-width: 768px) {
+        .md\:flex-row {
+          flex-direction: row;
+        }
+
+        .md\:justify-between {
+          justify-content: space-between;
+        }
+
+        .md\:text-\[48px\] {
+          font-size: 48px;
+        }
+
+        .md\:text-mid {
+          font-size: 17px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .lg\:box-border {
+          box-sizing: border-box;
+        }
+
+        .lg\:flex {
+          display: flex;
+        }
+
+        .lg\:w-\[250px\] {
+          width: 250px;
+        }
+
+        .lg\:max-w-\[380px\] {
+          max-width: 380px;
+        }
+
+        .lg\:justify-start {
+          justify-content: flex-start;
+        }
+
+        .lg\:justify-end {
+          justify-content: flex-end;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .xl\:w-\[300px\] {
+          width: 300px;
+        }
+
+        .xl\:max-w-\[410px\] {
+          max-width: 410px;
+        }
+
+        .xl\:pl-44 {
+          padding-left: 11rem;
+        }
+
+        .xl\:pr-\[54px\] {
+          padding-right: 54px;
+        }
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
     />
-  </head>
-  <body class="h-screen">
-    <div
-      class="bg-[url('/assets/final@3x.png')] bg-cover bg-no-repeat text-left text-[48px] text-white lg:box-border pl-4 pr-4 xl:pr-[54px] py-[54px] h-full flex flex-col justify-between space-y-8 xl:pl-44 w-full"
-    >
-      <!-- header -->
-      <div class="flex justify-center lg:justify-end">
-        <img
-          class="w-[306px] max-h-full object-cover max-w-full"
-          loading="eager"
-          alt=""
-          src="/assets/flowgpt_logo.png"
-        />
-      </div>
-      <!-- body -->
-      <div class="lg:flex justify-between">
-        <!-- subsribe area -->
-        <article class="lg:max-w-[380px] xl:max-w-[410px]">
-          <h1 class="font-extrabold text-[40px] md:text-[48px] flex flex-col">
-            Under <span>Maintenance</span>
-          </h1>
-          <p
-            class="text-sm md:text-mid font-medium flex flex-col gap-y-4 leading-7"
-          >
-            Our platform will be undergoing maintenance from February 1st, 00:00
-            AM, to February 1st, 11:59 PM. During the maintenance period, you
-            can join our Discord to get the latest updates.
-            <span>
-              The Flow Mobile App is now accepting beta testers! It offers a
-              whole new immersive, multi-media experience that connects you with
-              AI friends.</span
-            >
-            Register here and stay tuned for official announcements and
-            information on these exciting developments!
-          </p>
 
-          <!-- get notified -->
-          <form class="flex flex-col gap-y-4 w-full pt-4">
-            <div class="relative w-full flex">
-              <input
-                type="text"
-                id="floating_outlined"
-                class="px-2.5 pb-2.5 w-full pt-4 text-white bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-300 peer text-mid font-medium"
-                placeholder=" "
-              />
-              <label
-                for="floating_outlined"
-                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-transparent px-2 peer-focus:px-2 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
-                >Your email address</label
-              >
-            </div>
-            <button
-              type="submit"
-              title="To get notified when platform is live"
-              class="flex w-full h-[50px] py-6 justify-center items-center gap-2 flex-shrink-0 bg-white hover:bg-white/90 text-black text-mid font-bold rounded-xl cursor-pointer"
-            >
-              Subscribe
-            </button>
-          </form>
-        </article>
-        <!-- promotion area -->
-        <div class="flex-row items-end gap-7 pr-10 hidden lg:flex">
+    <link rel="icon" href="https://flowgpt.com/favicon.ico" />
+  </head>
+  <body class="h-screen w-screen">
+    <div
+      class="bg-cover bg-no-repeat text-left text-[48px] text-white lg:box-border h-full flex flex-col space-y-8 w-full"
+      style="background-image: url('https://flow-public-assets.s3.us-west-1.amazonaws.com/marketing/Final.png');"
+    >
+      <!-- Wrapper -->
+      <div
+        class="flex flex-col justify-between h-full pl-4 pr-4 xl:pr-[54px] xl:pl-44 py-[54px]"
+      >
+        <!-- header -->
+        <div class="flex justify-center lg:justify-end">
           <img
-            class="lg:w-[250px] xl:w-[300px] max-h-full object-cover max-w-full"
+            class="w-[306px] max-h-full object-cover max-w-full"
             loading="eager"
             alt=""
-            src="/assets/mobile_app_promo.png"
+            src="https://flow-public-assets.s3.us-west-1.amazonaws.com/marketing/FlowGPT.png"
           />
-
-          <div class="text-white">
-            <h3 class="text-[22px] font-extrabold">FLOW APP</h3>
-            <p class="flex flex-col font-medium text-mid">
-              Engage in coversation with AI <span>anytime, anywhere</span>
+        </div>
+        <!-- body -->
+        <div class="lg:flex justify-between">
+          <!-- subsribe area -->
+          <article class="lg:max-w-[380px] xl:max-w-[410px]">
+            <h1 class="font-extrabold text-[40px] md:text-[48px] flex flex-col">
+              Under <span>Maintenance</span>
+            </h1>
+            <p
+              class="text-sm md:text-mid font-medium flex flex-col gap-y-4 leading-7"
+            >
+              Our platform will be undergoing maintenance from February 1st,
+              00:00 AM, to February 1st, 11:59 PM. During the maintenance
+              period, you can join our Discord to get the latest updates.
+              <span>
+                The Flow Mobile App is now accepting beta testers! It offers a
+                whole new immersive, multi-media experience that connects you
+                with AI friends.</span
+              >
+              Register here and stay tuned for official announcements and
+              information on these exciting developments!
             </p>
+
+            <!-- get notified -->
+            <form class="flex flex-col gap-y-4 w-full pt-4">
+              <div class="relative w-full flex">
+                <input
+                  type="text"
+                  id="floating_outlined"
+                  class="px-2.5 pb-2.5 w-full pt-4 text-white bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-300 peer text-mid font-medium"
+                  placeholder=" "
+                />
+                <label
+                  for="floating_outlined"
+                  class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-transparent px-2 peer-focus:px-2 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                  >Your email address</label
+                >
+              </div>
+              <button
+                type="submit"
+                title="To get notified when platform is live"
+                class="flex w-full h-[50px] py-6 justify-center items-center gap-2 flex-shrink-0 bg-white hover:bg-white/90 text-black text-mid font-bold rounded-xl cursor-pointer"
+              >
+                Subscribe
+              </button>
+            </form>
+          </article>
+          <!-- promotion area -->
+          <div class="flex-row items-end gap-7 pr-10 hidden lg:flex">
+            <img
+              class="lg:w-[250px] xl:w-[300px] max-h-full object-cover max-w-full"
+              loading="eager"
+              alt=""
+              src="https://flow-public-assets.s3.us-west-1.amazonaws.com/marketing/Mobile+App+Promo.png"
+            />
+
+            <div class="text-white">
+              <h3 class="text-[22px] font-extrabold">FLOW APP</h3>
+              <p class="flex flex-col font-medium text-mid">
+                Engage in coversation with AI <span>anytime, anywhere</span>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Footer Section -->
-      <div
-        class="flex flex-col md:flex-row justify-center items-center md:justify-between w-full"
-      >
-        <!-- Copyright -->
+        <!-- Footer Section -->
         <div
-          class="text-sm tracking-[0.01em] font-poppins-s-regular max-w-full"
+          class="flex flex-col md:flex-row justify-center items-center md:justify-between w-full"
         >
-          © Copyrights FlowGPT | All Rights Reserved
-        </div>
-        <!-- Social Media Icons -->
-        <div class="flex flex-row items-center lg:justify-start gap-6">
-          <a
-            class="cursor-pointer"
-            href="https://www.facebook.com/flowgpt"
-            target="_blank"
-            title="Facebook"
+          <!-- Copyright -->
+          <div
+            class="text-sm tracking-[0.01em] font-poppins-s-regular max-w-full"
           >
-            <img
-              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
-              loading="eager"
-              alt=""
-              src="/assets/icons/fb.svg"
-            />
-          </a>
+            © Copyrights FlowGPT | All Rights Reserved
+          </div>
+          <!-- Social Media Icons -->
+          <div class="flex flex-row items-center lg:justify-start gap-6">
+            <a
+              class="cursor-pointer"
+              href="https://discord.com/invite/tWZGzcpTkf"
+              target="_blank"
+              title="Discord"
+            >
+              <img
+                class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                loading="eager"
+                alt=""
+                src="https://flow-public-assets.s3.us-west-1.amazonaws.com/marketing/Vector.png"
+              />
+            </a>
 
-          <a
-            class="cursor-pointer"
-            href="https://twitter.com/FlowGPTOfficial"
-            target="_blank"
-            title="Twitter"
-          >
-            <img
-              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
-              loading="eager"
-              alt=""
-              src="/assets/icons/x.svg"
-            />
-          </a>
+            <a
+              class="cursor-pointer"
+              href="https://twitter.com/FlowGPTOfficial"
+              target="_blank"
+              title="Twitter"
+            >
+              <img
+                class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                loading="eager"
+                alt=""
+                src="https://flow-public-assets.s3.us-west-1.amazonaws.com/marketing/Twitter.png"
+              />
+            </a>
 
-          <a
-            class="cursor-pointer"
-            href="https://www.instagram.com/flowgpt_official/"
-            target="_blank"
-            title="Instagram"
-          >
-            <img
-              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
-              loading="eager"
-              alt=""
-              src="/assets/icons/insta.svg"
-            />
-          </a>
+            <a
+              class="cursor-pointer"
+              href="https://www.instagram.com/flowgpt_official/"
+              target="_blank"
+              title="Instagram"
+            >
+              <img
+                class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                loading="eager"
+                alt=""
+                src="https://flow-public-assets.s3.us-west-1.amazonaws.com/marketing/Instagram.png"
+              />
+            </a>
 
-          <a
-            class="cursor-pointer"
-            href="https://www.linkedin.com/company/flowgpt/"
-            target="_blank"
-            title="LinkedIn"
-          >
-            <img
-              class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
-              loading="eager"
-              alt=""
-              src="/assets/icons/linkedin.svg"
-            />
-          </a>
+            <a
+              class="cursor-pointer"
+              href="https://www.linkedin.com/company/flowgpt/"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <img
+                class="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px]"
+                loading="eager"
+                alt=""
+                src="https://flow-public-assets.s3.us-west-1.amazonaws.com/marketing/Linkedin.png"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
